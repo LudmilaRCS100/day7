@@ -16,8 +16,10 @@ namespace day_8
         {
             Console.WriteLine("Hello world!");
             
-            JaunaZvaigzne();
-            MasivaPiemers();
+            /*JaunaZvaigzne();
+            MasivaPiemers();*/
+            Skaitli();
+
 
         }
 
@@ -46,7 +48,7 @@ namespace day_8
         }
         */
 
-        static void MasivaPiemers()
+        /*static void MasivaPiemers()
         {
                 int a, b, c, d;
                 a = 1;
@@ -92,6 +94,51 @@ namespace day_8
             Console.WriteLine(zvaigznites[2]);
             Console.ReadLine();
         }
+        */
+        /*static void Skaitli()
+        {
+            string[] skaitlis = new string[5];
+            int i;
+            skaitlis[0] = "*";
+            skaitlis[1] = "**";
+            skaitlis[2] = "***";
+            skaitlis[3] = "****";
+            skaitlis[4] = "*****";
+
+            for ( i = 0; i < 5; i++)
+            {
+                Console.WriteLine(skaitlis[i]);
+
+            }
+             Console.WriteLine(skaitlis[0]);
+             Console.WriteLine(skaitlis[1]);
+             Console.WriteLine(skaitlis[2]);
+             Console.WriteLine(skaitlis[3]);
+             Console.WriteLine(skaitlis[4]);
+             Console.ReadLine();*/
+
+            static void Skaitli()
+            {
+                string[] ievade = new string[5];
+                int[] izvade = new int[5];
+                int i;
+
+                for (i = 0; i < 5; i++)
+                {
+                Console.WriteLine("Ievadiet " + i + " vertibu!");
+                ievade [i] = Console.ReadLine();
+                izvade[i] = Convert.ToInt16(ievade[i]);
+                }
+                for (i = 0; i < 5; i++)
+                {
+                Console.WriteLine(izvade[1]);
+            }
+
+        }
+
+        
+
+
 
     }
 }
